@@ -30,7 +30,7 @@ export const ToastProvider = ({ children }: LoadingProviderProps) => {
         setItems((prev) => prev.filter((item) => item.id !== id));
       }, timeout);
     },
-    []
+    [],
   );
 
   return (
@@ -50,7 +50,7 @@ export const ToastProvider = ({ children }: LoadingProviderProps) => {
             </Toast.Item>
           ))}
         </Toast.Stack>,
-        document.body
+        document.body,
       )}
     </>
   );

@@ -7,7 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { render, renderHook, RenderOptions } from "@testing-library/react";
 
 export const generateWrapper = (
-  repositories: Partial<RepositoryContextProps>
+  repositories: Partial<RepositoryContextProps>,
 ) => {
   const initialRepositories = {
     ...DefaultRepositories,
@@ -36,7 +36,7 @@ const customRender = <
   BaseElement extends HTMLElement = HTMLElement,
 >(
   ui: React.ReactElement,
-  options: RenderOptions<Q, Container, BaseElement> & CustomRenderOptions = {}
+  options: RenderOptions<Q, Container, BaseElement> & CustomRenderOptions = {},
 ) => {
   const { repositories, ...renderOptions } = options;
   return render(ui, {
@@ -53,7 +53,7 @@ const customRenderHook = <
   BaseElement extends HTMLElement = HTMLElement,
 >(
   render: (initialProps: Props) => Result,
-  options: RenderOptions<Q, Container, BaseElement> & CustomRenderOptions = {}
+  options: RenderOptions<Q, Container, BaseElement> & CustomRenderOptions = {},
 ) => {
   const { repositories, ...renderOptions } = options;
   return renderHook(render, {

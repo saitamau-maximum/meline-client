@@ -19,7 +19,7 @@ const CreateChannelSchema = object({
   name: pipe(
     string(),
     minLength(1, "チャンネル名は必須です。"),
-    maxLength(255, "チャンネル名は255文字以内で入力してください。")
+    maxLength(255, "チャンネル名は255文字以内で入力してください。"),
   ),
 });
 
@@ -64,7 +64,7 @@ export const CreateChannelForm = () => {
     (data: CreateChannelFormData) => {
       createChannel(data);
     },
-    [createChannel]
+    [createChannel],
   );
 
   return (

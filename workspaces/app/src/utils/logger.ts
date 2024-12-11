@@ -11,7 +11,7 @@ const encodeStyle = (style: CSSProperties) => {
   return Object.entries(style)
     .map(
       ([key, value]) =>
-        `${key.replace(/([A-Z])/g, "-$1").toLowerCase()}:${value}`
+        `${key.replace(/([A-Z])/g, "-$1").toLowerCase()}:${value}`,
     )
     .join(";");
 };
@@ -32,7 +32,7 @@ const baseLogger = (message: string, variant: keyof typeof loggerVariant) => {
   console.log(
     `%c${variant}`,
     `${encodeStyle(loggerStyle)};${encodeStyle(loggerVariant[variant])}`,
-    message
+    message,
   );
 };
 

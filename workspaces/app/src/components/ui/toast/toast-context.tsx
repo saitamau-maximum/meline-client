@@ -8,7 +8,7 @@ interface ToastOptions {
 interface ToastContextProps {
   pushToast: (
     children: React.ReactNode,
-    options?: Partial<ToastOptions>
+    options?: Partial<ToastOptions>,
   ) => void;
 }
 

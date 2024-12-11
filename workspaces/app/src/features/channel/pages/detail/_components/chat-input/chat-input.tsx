@@ -37,7 +37,7 @@ export const ChatInput = ({ channelId }: ChatInputProps) => {
         setFormError("Failed to send message");
       }
     },
-    [postMessage]
+    [postMessage],
   );
 
   useEffect(() => {

@@ -15,7 +15,7 @@ export function clsx(
       classNames.push(
         ...Object.entries(cls)
           .filter(([_, value]) => value)
-          .map(([key]) => key)
+          .map(([key]) => key),
       );
     }
   }

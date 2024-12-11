@@ -15,9 +15,9 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         styles.button,
         styles.buttonVariant[variant],
         styles.buttonSize[size],
-        className
+        className,
       )}
       {...props}
     />
-  )
+  ),
 );

@@ -33,7 +33,7 @@ export const useNotifications = () => {
         />,
         {
           to: `/channel/${res.payload.channel_id}`,
-        }
+        },
       );
     });
 

@@ -30,5 +30,5 @@ export const TextInput = forwardRef<HTMLInputElement, Props>(
       )}
       {error && <p className={styles.textInputErrorText}>{error}</p>}
     </div>
-  )
+  ),
 );
