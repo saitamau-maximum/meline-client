@@ -145,7 +145,11 @@ importers:
         specifier: ^8.18.0
         version: 8.18.0(eslint@9.16.0)(typescript@5.7.2)
 
-  workspaces/schema: {}
+  workspaces/schema:
+    dependencies:
+      '@bufbuild/protobuf':
+        specifier: ^2.2.2
+        version: 2.2.3
 
 packages:
 

@@ -5,5 +5,8 @@
     "./*": {
       "import": "./generated/proto/*"
     }
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^2.2.2"
   }
 }
