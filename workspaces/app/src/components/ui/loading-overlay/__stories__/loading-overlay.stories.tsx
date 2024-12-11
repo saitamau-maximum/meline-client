@@ -1,6 +1,5 @@
 import { Meta } from "@storybook/react";
-import { LoadingOverlay } from "..";
-import { LoadingOverlayContext } from "@/providers/loading-overlay";
+import { LoadingOverlay, LoadingOverlayContext } from "..";
 
 const meta = {
   title: "Components/LoadingOverlay",

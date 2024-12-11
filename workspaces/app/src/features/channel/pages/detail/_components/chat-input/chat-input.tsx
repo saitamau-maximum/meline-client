@@ -1,25 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import {
-  InferInput,
-  maxLength,
-  minLength,
-  object,
-  string,
-  pipe,
-} from "valibot";
 import { styles } from "./chat-input.css";
 import { usePostMessage } from "../../_hooks/use-post-message";
 import { Textarea } from "@/components/ui/textarea";
 
-const ChatInputSchema = object({
-  message: pipe(
-    string(),
-    minLength(1, "Message is too short"),
-    maxLength(2000, "Message is too long")
-  ),
-});
-
-type ChatInputFormData = InferInput<typeof ChatInputSchema>;
+type ChatInputFormData = {
+  message: string;
+};
 
 interface ChatInputProps {
   channelId: number;
@@ -47,7 +33,7 @@ export const ChatInput = ({ channelId }: ChatInputProps) => {
         setTimeout(() => {
           reset();
         }, 0);
-      } catch (error) {
+      } catch {
         setFormError("Failed to send message");
       }
     },

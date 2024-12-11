@@ -29,6 +29,16 @@ export default tseslint.config(
     // @ts-expect-error reactHooksPlugin are not support flat config and export looses type
     rules: {
       ...reactHooksPlugin.configs.recommended.rules,
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          // ignore _* variables and functions
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+          destructuredArrayIgnorePattern: "^_",
+        },
+      ],
     },
   }
 );

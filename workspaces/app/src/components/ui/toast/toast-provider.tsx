@@ -1,6 +1,7 @@
 import { Toast } from "@/components/ui/toast";
-import React, { createContext, useCallback, useState } from "react";
+import React, { useCallback, useState } from "react";
 import { createPortal } from "react-dom";
+import { ToastContext } from "./toast-context";
 
 interface ToastItem {
   id: string;
@@ -12,19 +13,6 @@ interface ToastOptions {
   timeout: number;
   to: string;
 }
-
-interface ToastContextProps {
-  pushToast: (
-    children: React.ReactNode,
-    options?: Partial<ToastOptions>
-  ) => void;
-}
-
-export const ToastContext = createContext<ToastContextProps>({
-  pushToast: () => {
-    throw new Error("ToastContext is not implemented");
-  },
-});
 
 interface LoadingProviderProps {
   children: React.ReactNode;

@@ -8,7 +8,6 @@ interface BaseNotifyResponse {
   notify_meta: {
     type: NotifyType;
   };
-  payload: any;
 }
 
 export interface MessageNotifyResponse extends BaseNotifyResponse {

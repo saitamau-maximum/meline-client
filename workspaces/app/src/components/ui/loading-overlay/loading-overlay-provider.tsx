@@ -1,14 +1,5 @@
-import React, { createContext, useState } from "react";
-
-interface LoadingOverlayContextProps {
-  isLoading: boolean;
-  setIsLoading: (isLoading: boolean) => void;
-}
-
-export const LoadingOverlayContext = createContext<LoadingOverlayContextProps>({
-  isLoading: false,
-  setIsLoading: () => void 0,
-});
+import { useState } from "react";
+import { LoadingOverlayContext } from "./loading-overlay-context";
 
 interface LoadingProviderProps {
   children: React.ReactNode;

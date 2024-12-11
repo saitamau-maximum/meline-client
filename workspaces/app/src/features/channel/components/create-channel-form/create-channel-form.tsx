@@ -5,11 +5,22 @@ import { TextInput } from "@/components/ui/text-input";
 import { styles } from "./create-channel-form.css";
 import { useForm } from "react-hook-form";
 import { valibotResolver } from "@hookform/resolvers/valibot";
-import { InferInput, maxLength, minLength, object, string, pipe } from "valibot"
+import {
+  InferInput,
+  maxLength,
+  minLength,
+  object,
+  string,
+  pipe,
+} from "valibot";
 import { useCreateChannels } from "../../hooks/use-create-channel";
 
 const CreateChannelSchema = object({
-  name: pipe(string(), minLength(1, "チャンネル名は必須です。") , maxLength(255, "チャンネル名は255文字以内で入力してください。") ,),
+  name: pipe(
+    string(),
+    minLength(1, "チャンネル名は必須です。"),
+    maxLength(255, "チャンネル名は255文字以内で入力してください。")
+  ),
 });
 
 type CreateChannelFormData = InferInput<typeof CreateChannelSchema>;
@@ -60,7 +71,11 @@ export const CreateChannelForm = () => {
     <Dialog.Root
       open={isOpen}
       onOpenChange={(isOpen) => {
-        isOpen ? open() : close();
+        if (isOpen) {
+          open();
+        } else {
+          close();
+        }
       }}
     >
       <Dialog.Trigger asChild>
