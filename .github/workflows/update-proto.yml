@@ -115,11 +115,11 @@ jobs:
           name: proto-generated
       - name: Copy proto
         run: |
-          if [ -d source/src/generated/proto ]; then
-            rm -rf source/src/generated/proto
+          if [ -d source/workspaces/schema/generated/proto ]; then
+            rm -rf source/workspaces/schema/generated/proto
           fi
-          mkdir -p source/src/generated
-          mv es source/src/generated/proto
+          mkdir -p source/workspaces/schema/generated
+          mv es source/workspaces/schema/generated/proto
       - name: Set PR body
         id: set-pr-body
         run: |
