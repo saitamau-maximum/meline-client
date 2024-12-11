@@ -5,12 +5,12 @@ interface AuthUser {
   imageURL: string;
 }
 
-export interface IAuthUserRepository {
+export interface IAuthRepository {
   getAuthUser: () => Promise<AuthUser | null>;
   getAuthUser$$key: () => string[];
 }
 
-export class AuthUserRepositoryImpl implements IAuthUserRepository {
+export class AuthRepositoryImpl implements IAuthRepository {
   async getAuthUser() {
     const res = await serverFetch("/api/user/me");
 
