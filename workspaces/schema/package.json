@@ -1,0 +1,9 @@
+{
+  "name": "@meline/schema",
+  "private": true,
+  "exports": {
+    "./*": {
+      "import": "./generated/proto/*"
+    }
+  }
+}
