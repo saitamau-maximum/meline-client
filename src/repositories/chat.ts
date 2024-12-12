@@ -15,7 +15,7 @@ export class ChatRepositoryImpl implements IChatRepository {
 
   connect(channelId: number) {
     const protocol = location.protocol === "https:" ? "wss" : "ws";
-    const host = location.host;
+    const host = import.meta.env.VITE_SERVER_BASE_HOST;
     const url = `${protocol}://${host}/api/ws/${channelId}`;
     this.connection = new WebSocket(url);
   }

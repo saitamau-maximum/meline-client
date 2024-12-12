@@ -31,7 +31,7 @@ export class NotificationRepositoryImpl implements INotificationRepository {
 
   connect() {
     const protocol = location.protocol === "https:" ? "wss" : "ws";
-    const host = location.host;
+    const host = import.meta.env.VITE_SERVER_BASE_HOST;
     const url = `${protocol}://${host}/api/ws/notify`;
     this.connection = new WebSocket(url);
   }

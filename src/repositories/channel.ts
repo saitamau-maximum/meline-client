@@ -19,7 +19,7 @@ export interface IChannelRepository {
 
 export class ChannelRepositoryImpl implements IChannelRepository {
   async createChannel(param: CreateChannelParam) {
-    const res = await fetch("/api/channel", {
+    const res = await fetch(`${import.meta.env.VITE_SERVER_BASE_URL}/api/channel`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,7 +33,7 @@ export class ChannelRepositoryImpl implements IChannelRepository {
   }
 
   async getJoinedChannels() {
-    const res = await fetch("/api/channel");
+    const res = await fetch(`${import.meta.env.VITE_SERVER_BASE_URL}/api/channel`);
 
     return res.json();
   }

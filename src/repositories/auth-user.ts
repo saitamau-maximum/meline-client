@@ -10,7 +10,7 @@ export interface IAuthUserRepository {
 
 export class AuthUserRepositoryImpl implements IAuthUserRepository {
   async getAuthUser() {
-    const res = await fetch("/api/user/me");
+    const res = await fetch(`${import.meta.env.VITE_SERVER_BASE_URL}/api/user/me`);
 
     if (!res.ok) {
       return null;
