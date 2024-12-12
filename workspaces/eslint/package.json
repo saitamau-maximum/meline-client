@@ -1,0 +1,14 @@
+{
+  "name": "@meline/eslint",
+  "main": "eslint.config.js",
+  "type": "module",
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.62.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-plugin-storybook": "^0.11.1",
+    "globals": "^15.13.0",
+    "typescript-eslint": "^8.18.0"
+  }
+}

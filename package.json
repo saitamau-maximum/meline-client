@@ -1,6 +1,12 @@
 {
   "name": "@meline/client",
   "scripts": {
-    "dev": "pnpm -C workspaces/app dev"
+    "dev": "pnpm -C workspaces/app dev",
+    "fix": "pnpm -C workspaces/app fix",
+    "check": "pnpm -C workspaces/app check"
+  },
+  "devDependencies": {
+    "eslint": "^9.16.0",
+    "prettier": "^3.4.2"
   }
 }

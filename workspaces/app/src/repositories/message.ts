@@ -30,7 +30,7 @@ interface CreateMessageResponse {
 export interface IMessageRepository {
   createMessage: (
     channelId: number,
-    param: CreateMessageParam
+    param: CreateMessageParam,
   ) => Promise<void>;
   getMessages: (channelId: number) => Promise<CreateMessageResponse>;
   getMessages$$key: (channelId: number) => string[];

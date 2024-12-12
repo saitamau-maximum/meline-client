@@ -1,8 +1,8 @@
 import { clsx } from "@/libs/clsx";
 import { styles } from "./loading-overlay.css";
-import { LoadingOverlayContext } from "@/providers/loading-overlay";
 import { vars } from "@/styles";
 import { useContext, useEffect, useRef } from "react";
+import { LoadingOverlayContext } from "./loading-overlay-context";
 
 export const LoadingOverlay = () => {
   const { isLoading } = useContext(LoadingOverlayContext);

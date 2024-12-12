@@ -34,7 +34,7 @@ export const ChannelList = ({ channels, isLoading }: Props) => {
           className={clsx(
             styles.channelListItem,
             channel.hasNotification && styles.channelListItemNotification,
-            channel.active && styles.channelListItemActive
+            channel.active && styles.channelListItemActive,
           )}
           to={`/channel/${channel.id}`}
         >
