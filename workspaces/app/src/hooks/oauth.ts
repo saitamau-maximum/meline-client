@@ -21,7 +21,7 @@ export const useOAuth = () => {
         // DO NOTHING
       }
     },
-    [authRepository, queryClient]
+    [authRepository, queryClient],
   );
 
   useEffect(() => {

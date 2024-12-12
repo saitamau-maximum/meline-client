@@ -14,10 +14,10 @@ import { serverFetch } from "@/utils/fetch";
 
 export interface IChannelRepository {
   createChannel: (
-    param: CreateChannelRequest
+    param: CreateChannelRequest,
   ) => Promise<CreateChannelResponse>;
   getJoinedChannels: (
-    param: GetAllChannelsRequest
+    param: GetAllChannelsRequest,
   ) => Promise<GetAllChannelsResponse>;
   getJoinedChannels$$key: () => string[];
 }

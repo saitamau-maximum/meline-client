@@ -9,7 +9,7 @@ export const serverFetch = (input: string, init?: RequestInit) => {
   if (localStorage.getItem(JWT_STORAGE_KEY)) {
     headers.set(
       "Authorization",
-      `Bearer ${localStorage.getItem(JWT_STORAGE_KEY)}`
+      `Bearer ${localStorage.getItem(JWT_STORAGE_KEY)}`,
     );
   }
   return fetch(env("SERVER_BASE_URL") + input, {
