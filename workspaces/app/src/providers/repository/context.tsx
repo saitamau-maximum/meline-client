@@ -1,5 +1,5 @@
 import { DefaultRepositories } from "@/repositories";
-import { IAuthUserRepository } from "@/repositories/auth-user";
+import { IAuthRepository } from "@/repositories/auth";
 import { IChannelRepository } from "@/repositories/channel";
 import { IChatRepository } from "@/repositories/chat";
 import { IMessageRepository } from "@/repositories/message";
@@ -9,7 +9,7 @@ import { createContext } from "react";
 export interface RepositoryContextProps {
   channelRepository: IChannelRepository;
   chatRepository: IChatRepository;
-  authUserRepository: IAuthUserRepository;
+  authRepository: IAuthRepository;
   messageRepository: IMessageRepository;
   notificationRepository: INotificationRepository;
 }
