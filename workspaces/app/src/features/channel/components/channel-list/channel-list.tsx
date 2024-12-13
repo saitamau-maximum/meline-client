@@ -4,7 +4,7 @@ import { Hash } from "react-feather";
 import { clsx } from "@/libs/clsx";
 
 interface Channel {
-  id: number;
+  id: string;
   name: string;
   active?: boolean;
   hasNotification?: boolean;

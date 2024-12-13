@@ -7,7 +7,7 @@ import { ProfileBox } from "../profile-box";
 
 interface ChannelLayoutProps {
   channels: {
-    id: number;
+    id: string;
     name: string;
   }[];
   isChannelsLoading?: boolean;
