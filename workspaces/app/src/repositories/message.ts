@@ -1,3 +1,5 @@
+import { serverFetch } from "@/utils/fetch";
+
 export interface CreateMessageParam {
   content: string;
 }
@@ -38,7 +40,7 @@ export interface IMessageRepository {
 
 export class MessageRepositoryImpl implements IMessageRepository {
   async createMessage(channelId: number, param: CreateMessageParam) {
-    const res = await fetch(`/api/channel/${channelId}/message`, {
+    const res = await serverFetch(`/api/channel/${channelId}/message`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -52,7 +54,7 @@ export class MessageRepositoryImpl implements IMessageRepository {
   }
 
   async getMessages(channelId: number) {
-    const res = await fetch(`/api/channel/${channelId}/message`);
+    const res = await serverFetch(`/api/channel/${channelId}/message`);
 
     return res.json();
   }

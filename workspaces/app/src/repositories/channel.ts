@@ -1,3 +1,5 @@
+import { serverFetch } from "@/utils/fetch";
+
 interface Channel {
   id: number;
   name: string;
@@ -19,7 +21,7 @@ export interface IChannelRepository {
 
 export class ChannelRepositoryImpl implements IChannelRepository {
   async createChannel(param: CreateChannelParam) {
-    const res = await fetch("/api/channel", {
+    const res = await serverFetch("/api/channel", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,7 +35,7 @@ export class ChannelRepositoryImpl implements IChannelRepository {
   }
 
   async getJoinedChannels() {
-    const res = await fetch("/api/channel");
+    const res = await serverFetch("/api/channel");
 
     return res.json();
   }

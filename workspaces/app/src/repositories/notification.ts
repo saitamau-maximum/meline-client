@@ -1,3 +1,4 @@
+import { env } from "@/env";
 import { Message } from "./message";
 
 export enum NotifyType {
@@ -29,9 +30,7 @@ export class NotificationRepositoryImpl implements INotificationRepository {
   private connection: WebSocket | null = null;
 
   connect() {
-    const protocol = location.protocol === "https:" ? "wss" : "ws";
-    const host = location.host;
-    const url = `${protocol}://${host}/api/ws/notify`;
+    const url = `${env("SERVER_BASE_WEBSOCKET_URL")}/api/ws/notify`;
     this.connection = new WebSocket(url);
   }
 

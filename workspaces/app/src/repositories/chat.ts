@@ -1,3 +1,4 @@
+import { env } from "@/env";
 import { Message } from "./message";
 
 export interface MessageResponse {
@@ -14,9 +15,7 @@ export class ChatRepositoryImpl implements IChatRepository {
   private connection: WebSocket | null = null;
 
   connect(channelId: number) {
-    const protocol = location.protocol === "https:" ? "wss" : "ws";
-    const host = location.host;
-    const url = `${protocol}://${host}/api/ws/${channelId}`;
+    const url = `${env("SERVER_BASE_WEBSOCKET_URL")}/api/ws/${channelId}`;
     this.connection = new WebSocket(url);
   }
 

@@ -1,3 +1,5 @@
+import { serverFetch } from "@/utils/fetch";
+
 interface AuthUser {
   name: string;
   imageURL: string;
@@ -10,7 +12,7 @@ export interface IAuthUserRepository {
 
 export class AuthUserRepositoryImpl implements IAuthUserRepository {
   async getAuthUser() {
-    const res = await fetch("/api/user/me");
+    const res = await serverFetch("/api/user/me");
 
     if (!res.ok) {
       return null;
