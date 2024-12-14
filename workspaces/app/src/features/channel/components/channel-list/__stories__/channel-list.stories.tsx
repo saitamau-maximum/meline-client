@@ -9,15 +9,15 @@ export default meta;
 
 const mockChannels = [
   {
-    id: 1,
+    id: "1",
     name: "general",
   },
   {
-    id: 2,
+    id: "2",
     name: "random",
   },
   {
-    id: 3,
+    id: "3",
     name: "random2",
   },
 ];

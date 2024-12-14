@@ -36,7 +36,7 @@ export class ChannelRepositoryImpl implements IChannelRepository {
       throw new Error("Failed to create channel");
     }
 
-    return create(CreateChannelResponseSchema, await res.json());
+    return create(CreateChannelResponseSchema, {}); // レスポンスが空なのでawait res.json()するとエラーになる
   }
 
   async getJoinedChannels() {
