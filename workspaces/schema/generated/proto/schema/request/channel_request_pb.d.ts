@@ -11,18 +11,6 @@ import type { Message } from "@bufbuild/protobuf";
 export declare const file_schema_request_channel_request: GenFile;
 
 /**
- * @generated from message schema.request.GetAllChannelsRequest
- */
-export declare type GetAllChannelsRequest = Message<"schema.request.GetAllChannelsRequest"> & {
-};
-
-/**
- * Describes the message schema.request.GetAllChannelsRequest.
- * Use `create(GetAllChannelsRequestSchema)` to create a new message.
- */
-export declare const GetAllChannelsRequestSchema: GenMessage<GetAllChannelsRequest>;
-
-/**
  * @generated from message schema.request.GetChannelByIDRequest
  */
 export declare type GetChannelByIDRequest = Message<"schema.request.GetChannelByIDRequest"> & {

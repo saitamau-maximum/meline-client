@@ -3,13 +3,12 @@
 /* eslint-disable */
 
 import type { GenFile, GenService } from "@bufbuild/protobuf/codegenv1";
-import type { CreateChannelRequestSchema, CreateChildChannelRequestSchema, DeleteChannelRequestSchema, GetAllChannelsRequestSchema, GetChannelByIDRequestSchema, JoinChannelRequestSchema, LeaveChannelRequestSchema, UpdateChannelRequestSchema } from "./schema/request/channel_request_pb";
-import type { CreateChannelResponseSchema, CreateChildChannelResponseSchema, DeleteChannelResponseSchema, GetAllChannelsResponseSchema, GetChannelByIDResponseSchema, JoinChannelResponseSchema, LeaveChannelResponseSchema, UpdateChannelResponseSchema } from "./schema/response/channel_response_pb";
+import type { EmptySchema } from "@bufbuild/protobuf/wkt";
+import type { GetAllChannelsResponseSchema, GetChannelByIDResponseSchema } from "./schema/response/channel_response_pb";
+import type { CreateChannelRequestSchema, CreateChildChannelRequestSchema, DeleteChannelRequestSchema, GetChannelByIDRequestSchema, JoinChannelRequestSchema, LeaveChannelRequestSchema, UpdateChannelRequestSchema } from "./schema/request/channel_request_pb";
 import type { CreateMessageRequestSchema, CreateReplyMessageRequestSchema, DeleteMessageRequestSchema, GetByChannelIDRequestSchema, UpdateMessageRequestSchema } from "./schema/request/message_request_pb";
-import type { CreateMessageResponseSchema, CreateReplyMessageResponseSchema, DeleteMessageResponseSchema, GetByChannelIDResponseSchema, UpdateMessageResponseSchema } from "./schema/response/message_response_pb";
-import type { UserMeRequestSchema } from "./schema/request/user_request_pb";
+import type { GetByChannelIDResponseSchema } from "./schema/response/message_response_pb";
 import type { UserMeResponseSchema } from "./schema/response/user_response_pb";
-import type { NotifyRequestSchema } from "./schema/request/notify_request_pb";
 import type { NotifyResponseSchema } from "./schema/response/notify_response_pb";
 
 /**
@@ -26,7 +25,7 @@ export declare const ChannelService: GenService<{
    */
   getAllChannels: {
     methodKind: "unary";
-    input: typeof GetAllChannelsRequestSchema;
+    input: typeof EmptySchema;
     output: typeof GetAllChannelsResponseSchema;
   },
   /**
@@ -43,7 +42,7 @@ export declare const ChannelService: GenService<{
   joinChannel: {
     methodKind: "unary";
     input: typeof JoinChannelRequestSchema;
-    output: typeof JoinChannelResponseSchema;
+    output: typeof EmptySchema;
   },
   /**
    * @generated from rpc meline.ChannelService.CreateChannel
@@ -51,7 +50,7 @@ export declare const ChannelService: GenService<{
   createChannel: {
     methodKind: "unary";
     input: typeof CreateChannelRequestSchema;
-    output: typeof CreateChannelResponseSchema;
+    output: typeof EmptySchema;
   },
   /**
    * @generated from rpc meline.ChannelService.CreateChildChannel
@@ -59,7 +58,7 @@ export declare const ChannelService: GenService<{
   createChildChannel: {
     methodKind: "unary";
     input: typeof CreateChildChannelRequestSchema;
-    output: typeof CreateChildChannelResponseSchema;
+    output: typeof EmptySchema;
   },
   /**
    * @generated from rpc meline.ChannelService.UpdateChannel
@@ -67,7 +66,7 @@ export declare const ChannelService: GenService<{
   updateChannel: {
     methodKind: "unary";
     input: typeof UpdateChannelRequestSchema;
-    output: typeof UpdateChannelResponseSchema;
+    output: typeof EmptySchema;
   },
   /**
    * @generated from rpc meline.ChannelService.DeleteChannel
@@ -75,7 +74,7 @@ export declare const ChannelService: GenService<{
   deleteChannel: {
     methodKind: "unary";
     input: typeof DeleteChannelRequestSchema;
-    output: typeof DeleteChannelResponseSchema;
+    output: typeof EmptySchema;
   },
   /**
    * @generated from rpc meline.ChannelService.LeaveChannel
@@ -83,7 +82,7 @@ export declare const ChannelService: GenService<{
   leaveChannel: {
     methodKind: "unary";
     input: typeof LeaveChannelRequestSchema;
-    output: typeof LeaveChannelResponseSchema;
+    output: typeof EmptySchema;
   },
 }>;
 
@@ -105,7 +104,7 @@ export declare const MessageService: GenService<{
   create: {
     methodKind: "unary";
     input: typeof CreateMessageRequestSchema;
-    output: typeof CreateMessageResponseSchema;
+    output: typeof EmptySchema;
   },
   /**
    * @generated from rpc meline.MessageService.CreateReply
@@ -113,7 +112,7 @@ export declare const MessageService: GenService<{
   createReply: {
     methodKind: "unary";
     input: typeof CreateReplyMessageRequestSchema;
-    output: typeof CreateReplyMessageResponseSchema;
+    output: typeof EmptySchema;
   },
   /**
    * @generated from rpc meline.MessageService.Update
@@ -121,7 +120,7 @@ export declare const MessageService: GenService<{
   update: {
     methodKind: "unary";
     input: typeof UpdateMessageRequestSchema;
-    output: typeof UpdateMessageResponseSchema;
+    output: typeof EmptySchema;
   },
   /**
    * @generated from rpc meline.MessageService.Delete
@@ -129,7 +128,7 @@ export declare const MessageService: GenService<{
   delete: {
     methodKind: "unary";
     input: typeof DeleteMessageRequestSchema;
-    output: typeof DeleteMessageResponseSchema;
+    output: typeof EmptySchema;
   },
 }>;
 
@@ -142,7 +141,7 @@ export declare const UserService: GenService<{
    */
   me: {
     methodKind: "unary";
-    input: typeof UserMeRequestSchema;
+    input: typeof EmptySchema;
     output: typeof UserMeResponseSchema;
   },
 }>;
@@ -156,7 +155,7 @@ export declare const NotifyService: GenService<{
    */
   notify: {
     methodKind: "unary";
-    input: typeof NotifyRequestSchema;
+    input: typeof EmptySchema;
     output: typeof NotifyResponseSchema;
   },
 }>;
