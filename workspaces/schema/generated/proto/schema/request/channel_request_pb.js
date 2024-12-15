@@ -8,61 +8,54 @@ import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
  * Describes the file schema/request/channel_request.proto.
  */
 export const file_schema_request_channel_request = /*@__PURE__*/
-  fileDesc("CiRzY2hlbWEvcmVxdWVzdC9jaGFubmVsX3JlcXVlc3QucHJvdG8SDnNjaGVtYS5yZXF1ZXN0IhcKFUdldEFsbENoYW5uZWxzUmVxdWVzdCIjChVHZXRDaGFubmVsQnlJRFJlcXVlc3QSCgoCaWQYASABKAkiIAoSSm9pbkNoYW5uZWxSZXF1ZXN0EgoKAmlkGAEgASgJIiQKFENyZWF0ZUNoYW5uZWxSZXF1ZXN0EgwKBG5hbWUYASABKAkiNQoZQ3JlYXRlQ2hpbGRDaGFubmVsUmVxdWVzdBIKCgJpZBgBIAEoCRIMCgRuYW1lGAIgASgJIjAKFFVwZGF0ZUNoYW5uZWxSZXF1ZXN0EgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkiIgoURGVsZXRlQ2hhbm5lbFJlcXVlc3QSCgoCaWQYASABKAkiIQoTTGVhdmVDaGFubmVsUmVxdWVzdBIKCgJpZBgBIAEoCULIAQoSY29tLnNjaGVtYS5yZXF1ZXN0QhNDaGFubmVsUmVxdWVzdFByb3RvUAFaRGdpdGh1Yi5jb20vc2FpdGFtYXUtbWF4aW11bS9tZWxpbmUvZ2VuZXJhdGVkL3Byb3RvL2dvL3NjaGVtYS9yZXF1ZXN0ogIDU1JYqgIOU2NoZW1hLlJlcXVlc3TKAg5TY2hlbWFcUmVxdWVzdOICGlNjaGVtYVxSZXF1ZXN0XEdQQk1ldGFkYXRh6gIPU2NoZW1hOjpSZXF1ZXN0YgZwcm90bzM");
-
-/**
- * Describes the message schema.request.GetAllChannelsRequest.
- * Use `create(GetAllChannelsRequestSchema)` to create a new message.
- */
-export const GetAllChannelsRequestSchema = /*@__PURE__*/
-  messageDesc(file_schema_request_channel_request, 0);
+  fileDesc("CiRzY2hlbWEvcmVxdWVzdC9jaGFubmVsX3JlcXVlc3QucHJvdG8SDnNjaGVtYS5yZXF1ZXN0IiMKFUdldENoYW5uZWxCeUlEUmVxdWVzdBIKCgJpZBgBIAEoCSIgChJKb2luQ2hhbm5lbFJlcXVlc3QSCgoCaWQYASABKAkiJAoUQ3JlYXRlQ2hhbm5lbFJlcXVlc3QSDAoEbmFtZRgBIAEoCSI1ChlDcmVhdGVDaGlsZENoYW5uZWxSZXF1ZXN0EgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkiMAoUVXBkYXRlQ2hhbm5lbFJlcXVlc3QSCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCSIiChREZWxldGVDaGFubmVsUmVxdWVzdBIKCgJpZBgBIAEoCSIhChNMZWF2ZUNoYW5uZWxSZXF1ZXN0EgoKAmlkGAEgASgJQsgBChJjb20uc2NoZW1hLnJlcXVlc3RCE0NoYW5uZWxSZXF1ZXN0UHJvdG9QAVpEZ2l0aHViLmNvbS9zYWl0YW1hdS1tYXhpbXVtL21lbGluZS9nZW5lcmF0ZWQvcHJvdG8vZ28vc2NoZW1hL3JlcXVlc3SiAgNTUliqAg5TY2hlbWEuUmVxdWVzdMoCDlNjaGVtYVxSZXF1ZXN04gIaU2NoZW1hXFJlcXVlc3RcR1BCTWV0YWRhdGHqAg9TY2hlbWE6OlJlcXVlc3RiBnByb3RvMw");
 
 /**
  * Describes the message schema.request.GetChannelByIDRequest.
  * Use `create(GetChannelByIDRequestSchema)` to create a new message.
  */
 export const GetChannelByIDRequestSchema = /*@__PURE__*/
-  messageDesc(file_schema_request_channel_request, 1);
+  messageDesc(file_schema_request_channel_request, 0);
 
 /**
  * Describes the message schema.request.JoinChannelRequest.
  * Use `create(JoinChannelRequestSchema)` to create a new message.
  */
 export const JoinChannelRequestSchema = /*@__PURE__*/
-  messageDesc(file_schema_request_channel_request, 2);
+  messageDesc(file_schema_request_channel_request, 1);
 
 /**
  * Describes the message schema.request.CreateChannelRequest.
  * Use `create(CreateChannelRequestSchema)` to create a new message.
  */
 export const CreateChannelRequestSchema = /*@__PURE__*/
-  messageDesc(file_schema_request_channel_request, 3);
+  messageDesc(file_schema_request_channel_request, 2);
 
 /**
  * Describes the message schema.request.CreateChildChannelRequest.
  * Use `create(CreateChildChannelRequestSchema)` to create a new message.
  */
 export const CreateChildChannelRequestSchema = /*@__PURE__*/
-  messageDesc(file_schema_request_channel_request, 4);
+  messageDesc(file_schema_request_channel_request, 3);
 
 /**
  * Describes the message schema.request.UpdateChannelRequest.
  * Use `create(UpdateChannelRequestSchema)` to create a new message.
  */
 export const UpdateChannelRequestSchema = /*@__PURE__*/
-  messageDesc(file_schema_request_channel_request, 5);
+  messageDesc(file_schema_request_channel_request, 4);
 
 /**
  * Describes the message schema.request.DeleteChannelRequest.
  * Use `create(DeleteChannelRequestSchema)` to create a new message.
  */
 export const DeleteChannelRequestSchema = /*@__PURE__*/
-  messageDesc(file_schema_request_channel_request, 6);
+  messageDesc(file_schema_request_channel_request, 5);
 
 /**
  * Describes the message schema.request.LeaveChannelRequest.
  * Use `create(LeaveChannelRequestSchema)` to create a new message.
  */
 export const LeaveChannelRequestSchema = /*@__PURE__*/
-  messageDesc(file_schema_request_channel_request, 7);
+  messageDesc(file_schema_request_channel_request, 6);
 

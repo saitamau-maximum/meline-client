@@ -9,7 +9,7 @@ import { file_base_message_base } from "../../base/message_base_pb";
  * Describes the file schema/response/message_response.proto.
  */
 export const file_schema_response_message_response = /*@__PURE__*/
-  fileDesc("CiZzY2hlbWEvcmVzcG9uc2UvbWVzc2FnZV9yZXNwb25zZS5wcm90bxIPc2NoZW1hLnJlc3BvbnNlIjkKFkdldEJ5Q2hhbm5lbElEUmVzcG9uc2USHwoIbWVzc2FnZXMYASADKAsyDS5iYXNlLk1lc3NhZ2UiFwoVQ3JlYXRlTWVzc2FnZVJlc3BvbnNlIhwKGkNyZWF0ZVJlcGx5TWVzc2FnZVJlc3BvbnNlIhcKFVVwZGF0ZU1lc3NhZ2VSZXNwb25zZSIXChVEZWxldGVNZXNzYWdlUmVzcG9uc2VCzwEKE2NvbS5zY2hlbWEucmVzcG9uc2VCFE1lc3NhZ2VSZXNwb25zZVByb3RvUAFaRWdpdGh1Yi5jb20vc2FpdGFtYXUtbWF4aW11bS9tZWxpbmUvZ2VuZXJhdGVkL3Byb3RvL2dvL3NjaGVtYS9yZXNwb25zZaICA1NSWKoCD1NjaGVtYS5SZXNwb25zZcoCD1NjaGVtYVxSZXNwb25zZeICG1NjaGVtYVxSZXNwb25zZVxHUEJNZXRhZGF0YeoCEFNjaGVtYTo6UmVzcG9uc2ViBnByb3RvMw", [file_base_message_base]);
+  fileDesc("CiZzY2hlbWEvcmVzcG9uc2UvbWVzc2FnZV9yZXNwb25zZS5wcm90bxIPc2NoZW1hLnJlc3BvbnNlIjkKFkdldEJ5Q2hhbm5lbElEUmVzcG9uc2USHwoIbWVzc2FnZXMYASADKAsyDS5iYXNlLk1lc3NhZ2VCzwEKE2NvbS5zY2hlbWEucmVzcG9uc2VCFE1lc3NhZ2VSZXNwb25zZVByb3RvUAFaRWdpdGh1Yi5jb20vc2FpdGFtYXUtbWF4aW11bS9tZWxpbmUvZ2VuZXJhdGVkL3Byb3RvL2dvL3NjaGVtYS9yZXNwb25zZaICA1NSWKoCD1NjaGVtYS5SZXNwb25zZcoCD1NjaGVtYVxSZXNwb25zZeICG1NjaGVtYVxSZXNwb25zZVxHUEJNZXRhZGF0YeoCEFNjaGVtYTo6UmVzcG9uc2ViBnByb3RvMw", [file_base_message_base]);
 
 /**
  * Describes the message schema.response.GetByChannelIDResponse.
@@ -17,32 +17,4 @@ export const file_schema_response_message_response = /*@__PURE__*/
  */
 export const GetByChannelIDResponseSchema = /*@__PURE__*/
   messageDesc(file_schema_response_message_response, 0);
-
-/**
- * Describes the message schema.response.CreateMessageResponse.
- * Use `create(CreateMessageResponseSchema)` to create a new message.
- */
-export const CreateMessageResponseSchema = /*@__PURE__*/
-  messageDesc(file_schema_response_message_response, 1);
-
-/**
- * Describes the message schema.response.CreateReplyMessageResponse.
- * Use `create(CreateReplyMessageResponseSchema)` to create a new message.
- */
-export const CreateReplyMessageResponseSchema = /*@__PURE__*/
-  messageDesc(file_schema_response_message_response, 2);
-
-/**
- * Describes the message schema.response.UpdateMessageResponse.
- * Use `create(UpdateMessageResponseSchema)` to create a new message.
- */
-export const UpdateMessageResponseSchema = /*@__PURE__*/
-  messageDesc(file_schema_response_message_response, 3);
-
-/**
- * Describes the message schema.response.DeleteMessageResponse.
- * Use `create(DeleteMessageResponseSchema)` to create a new message.
- */
-export const DeleteMessageResponseSchema = /*@__PURE__*/
-  messageDesc(file_schema_response_message_response, 4);
 

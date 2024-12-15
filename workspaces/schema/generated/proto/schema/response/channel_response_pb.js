@@ -9,7 +9,7 @@ import { file_base_channel_base } from "../../base/channel_base_pb";
  * Describes the file schema/response/channel_response.proto.
  */
 export const file_schema_response_channel_response = /*@__PURE__*/
-  fileDesc("CiZzY2hlbWEvcmVzcG9uc2UvY2hhbm5lbF9yZXNwb25zZS5wcm90bxIPc2NoZW1hLnJlc3BvbnNlIjkKFkdldEFsbENoYW5uZWxzUmVzcG9uc2USHwoIY2hhbm5lbHMYASADKAsyDS5iYXNlLkNoYW5uZWwiPgoWR2V0Q2hhbm5lbEJ5SURSZXNwb25zZRIkCgdjaGFubmVsGAEgASgLMhMuYmFzZS5DaGFubmVsRGV0YWlsIhUKE0pvaW5DaGFubmVsUmVzcG9uc2UiFwoVQ3JlYXRlQ2hhbm5lbFJlc3BvbnNlIhwKGkNyZWF0ZUNoaWxkQ2hhbm5lbFJlc3BvbnNlIhcKFVVwZGF0ZUNoYW5uZWxSZXNwb25zZSIXChVEZWxldGVDaGFubmVsUmVzcG9uc2UiFgoUTGVhdmVDaGFubmVsUmVzcG9uc2VCzwEKE2NvbS5zY2hlbWEucmVzcG9uc2VCFENoYW5uZWxSZXNwb25zZVByb3RvUAFaRWdpdGh1Yi5jb20vc2FpdGFtYXUtbWF4aW11bS9tZWxpbmUvZ2VuZXJhdGVkL3Byb3RvL2dvL3NjaGVtYS9yZXNwb25zZaICA1NSWKoCD1NjaGVtYS5SZXNwb25zZcoCD1NjaGVtYVxSZXNwb25zZeICG1NjaGVtYVxSZXNwb25zZVxHUEJNZXRhZGF0YeoCEFNjaGVtYTo6UmVzcG9uc2ViBnByb3RvMw", [file_base_channel_base]);
+  fileDesc("CiZzY2hlbWEvcmVzcG9uc2UvY2hhbm5lbF9yZXNwb25zZS5wcm90bxIPc2NoZW1hLnJlc3BvbnNlIjkKFkdldEFsbENoYW5uZWxzUmVzcG9uc2USHwoIY2hhbm5lbHMYASADKAsyDS5iYXNlLkNoYW5uZWwiPgoWR2V0Q2hhbm5lbEJ5SURSZXNwb25zZRIkCgdjaGFubmVsGAEgASgLMhMuYmFzZS5DaGFubmVsRGV0YWlsQs8BChNjb20uc2NoZW1hLnJlc3BvbnNlQhRDaGFubmVsUmVzcG9uc2VQcm90b1ABWkVnaXRodWIuY29tL3NhaXRhbWF1LW1heGltdW0vbWVsaW5lL2dlbmVyYXRlZC9wcm90by9nby9zY2hlbWEvcmVzcG9uc2WiAgNTUliqAg9TY2hlbWEuUmVzcG9uc2XKAg9TY2hlbWFcUmVzcG9uc2XiAhtTY2hlbWFcUmVzcG9uc2VcR1BCTWV0YWRhdGHqAhBTY2hlbWE6OlJlc3BvbnNlYgZwcm90bzM", [file_base_channel_base]);
 
 /**
  * Describes the message schema.response.GetAllChannelsResponse.
@@ -24,46 +24,4 @@ export const GetAllChannelsResponseSchema = /*@__PURE__*/
  */
 export const GetChannelByIDResponseSchema = /*@__PURE__*/
   messageDesc(file_schema_response_channel_response, 1);
-
-/**
- * Describes the message schema.response.JoinChannelResponse.
- * Use `create(JoinChannelResponseSchema)` to create a new message.
- */
-export const JoinChannelResponseSchema = /*@__PURE__*/
-  messageDesc(file_schema_response_channel_response, 2);
-
-/**
- * Describes the message schema.response.CreateChannelResponse.
- * Use `create(CreateChannelResponseSchema)` to create a new message.
- */
-export const CreateChannelResponseSchema = /*@__PURE__*/
-  messageDesc(file_schema_response_channel_response, 3);
-
-/**
- * Describes the message schema.response.CreateChildChannelResponse.
- * Use `create(CreateChildChannelResponseSchema)` to create a new message.
- */
-export const CreateChildChannelResponseSchema = /*@__PURE__*/
-  messageDesc(file_schema_response_channel_response, 4);
-
-/**
- * Describes the message schema.response.UpdateChannelResponse.
- * Use `create(UpdateChannelResponseSchema)` to create a new message.
- */
-export const UpdateChannelResponseSchema = /*@__PURE__*/
-  messageDesc(file_schema_response_channel_response, 5);
-
-/**
- * Describes the message schema.response.DeleteChannelResponse.
- * Use `create(DeleteChannelResponseSchema)` to create a new message.
- */
-export const DeleteChannelResponseSchema = /*@__PURE__*/
-  messageDesc(file_schema_response_channel_response, 6);
-
-/**
- * Describes the message schema.response.LeaveChannelResponse.
- * Use `create(LeaveChannelResponseSchema)` to create a new message.
- */
-export const LeaveChannelResponseSchema = /*@__PURE__*/
-  messageDesc(file_schema_response_channel_response, 7);
 
